@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="preload" href="images/ebook-cover.jpg" as="image" fetchpriority="high">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -57,7 +58,9 @@
                         <img src="images/ebook-cover.jpg"
                              alt="Ebook +10000 Patrones de Amigurumis"
                              class="ebook-img img-fluid"
-                             loading="eager">
+                             loading="eager"
+                             fetchpriority="high"
+                             width="420" height="560">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
@@ -428,7 +431,7 @@
         <div class="container py-3">
             <div class="video-wrapper mx-auto text-center" style="max-width: 500px;">
                 <video class="local-video img-fluid" controls playsinline preload="metadata"
-                       poster="images/video-poster.png">
+                       poster="images/video-poster.png" width="420" height="747">
                     <source src="video-amigurumis.mp4" type="video/mp4">
                     Tu navegador no soporta videos HTML5.
                 </video>
@@ -437,69 +440,74 @@
         </div>
     </section>
 
-    <!-- TESTIMONIOS -->
+    <!-- TESTIMONIOS CARRUSEL -->
     <section class="testimonials py-5">
         <div class="container py-3">
             <h2 class="section-title text-center m-0 mb-3">💕 Lo que dicen nuestras tejedoras</h2>
             <p class="section-subtitle text-center m-0 mb-5">Más de <strong>+2.500 alumnas</strong> ya están creando con nuestros patrones</p>
 
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial h-100">
-                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Llevo como 4 meses tejiendo y siempre encontraba lo mismo en Pinterest. Aquí hay cosas que ni sabía que existían. Ya hice unos llaveritos para el cumple de mi sobrina y quedaron hermosos."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar avatar-mg">VR</div>
-                            <div>
-                                <strong>— Valeria Ramírez</strong>
-                                <span>Ciudad de México, México 🇲🇽</span>
-                                <span class="testimonial-verified">✓ Compra verificada</span>
+            <div class="testimonials-carousel" id="testimonialsCarousel">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-slide">
+                        <div class="testimonial h-100">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Llevo como 4 meses tejiendo y siempre encontraba lo mismo en Pinterest. Aquí hay cosas que ni sabía que existían. Ya hice unos llaveritos para el cumple de mi sobrina y quedaron hermosos."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar avatar-mg">VR</div>
+                                <div>
+                                    <strong>— Valeria Ramírez</strong>
+                                    <span>Ciudad de México, México 🇲🇽</span>
+                                    <span class="testimonial-verified">✓ Compra verificada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial h-100">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Lo compré por curiosidad y termine enganchada. El bono del Excel para calcular precios es una maravilla, ahora sé cuánto cobrar sin regalarme el trabajo. Ya llevo 3 pedidos en Medellín."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar avatar-cr">SO</div>
+                                <div>
+                                    <strong>— Sofía Ospina</strong>
+                                    <span>Medellín, Colombia 🇨🇴</span>
+                                    <span class="testimonial-verified">✓ Compra verificada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial h-100">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Soy de Chile y la verdad los patrones en inglés me aburrían. Acá todo está explicado paso a paso, súper claro. El curso online me sirvió un montón para aprender los puntos básicos."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar avatar-as">CF</div>
+                                <div>
+                                    <strong>— Camila Fuentes</strong>
+                                    <span>Santiago, Chile 🇨🇱</span>
+                                    <span class="testimonial-verified">✓ Compra verificada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial h-100">
+                            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                            <p>"Vivo en Buenos Aires y comencé vendiendo en Mercado Libre. Con el Plan de Emprendimiento que viene de bono aprendí a armar mi tienda y ya facturé arriba de $2.000 USD. 100% recomendado."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar avatar-lp">MR</div>
+                                <div>
+                                    <strong>— Milagros Rodríguez</strong>
+                                    <span>Buenos Aires, Argentina 🇦🇷</span>
+                                    <span class="testimonial-verified">✓ Compra verificada</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial h-100">
-                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Lo compré por curiosidad y termine enganchada. El bono del Excel para calcular precios es una maravilla, ahora sé cuánto cobrar sin regalarme el trabajo. Ya llevo 3 pedidos en Medellín."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar avatar-cr">SO</div>
-                            <div>
-                                <strong>— Sofía Ospina</strong>
-                                <span>Medellín, Colombia 🇨🇴</span>
-                                <span class="testimonial-verified">✓ Compra verificada</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial h-100">
-                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Soy de Chile y la verdad los patrones en inglés me aburrían. Acá todo está explicado paso a paso, súper claro. El curso online me sirvió un montón para aprender los puntos básicos."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar avatar-as">CF</div>
-                            <div>
-                                <strong>— Camila Fuentes</strong>
-                                <span>Santiago, Chile 🇨🇱</span>
-                                <span class="testimonial-verified">✓ Compra verificada</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="testimonial h-100">
-                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Vivo en Buenos Aires y comencé vendiendo en Mercado Libre. Con el Plan de Emprendimiento que viene de bono aprendí a armar mi tienda y ya facturé arriba de $2.000 USD. 100% recomendado."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar avatar-lp">MR</div>
-                            <div>
-                                <strong>— Milagros Rodríguez</strong>
-                                <span>Buenos Aires, Argentina 🇦🇷</span>
-                                <span class="testimonial-verified">✓ Compra verificada</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="testimonials-nav" id="testimonialsNav"></div>
+                <button class="testimonial-arrow testimonial-arrow-prev" id="testimonialPrev" aria-label="Anterior">&#8249;</button>
+                <button class="testimonial-arrow testimonial-arrow-next" id="testimonialNext" aria-label="Siguiente">&#8250;</button>
             </div>
         </div>
     </section>
@@ -715,6 +723,6 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
