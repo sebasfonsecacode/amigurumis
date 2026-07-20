@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
        4. MODAL - Solo si NO compra en 2 minutos
        ========================================= */
     const exitModal = document.getElementById('exitModal');
-    const bsModal = exitModal ? new bootstrap.Modal(exitModal, { backdrop: 'static' }) : null;
+    const bsModal = exitModal ? new bootstrap.Modal(exitModal, { backdrop: true, keyboard: true }) : null;
     let modalShown = false;
     let userClickedCTA = false;
 

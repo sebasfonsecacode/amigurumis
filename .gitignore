@@ -1,0 +1,4 @@
+node_modules/
+package-lock.json
+download-images.js
+create-favicon.js

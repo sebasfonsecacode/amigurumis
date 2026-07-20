@@ -736,6 +736,10 @@ p, .lead { font-family: 'Poppins', Arial, sans-serif; }
 .avatar-cr { background: linear-gradient(135deg, #4FD1D1, #2EBABA); }
 .avatar-as { background: linear-gradient(135deg, #5DC275, #38A169); }
 .avatar-lp { background: linear-gradient(135deg, #F0E542, #D4CB2A); color: var(--black); }
+.avatar-vr { background: linear-gradient(135deg, #FF8FB1, #E91E63); }
+.avatar-so { background: linear-gradient(135deg, #4FD1D1, #2EBABA); }
+.avatar-cf { background: linear-gradient(135deg, #5DC275, #38A169); }
+.avatar-mr { background: linear-gradient(135deg, #F0E542, #D4CB2A); color: var(--black); }
 .testimonial-author strong { display: block; font-size: 18px; color: var(--dark); font-weight: 700; }
 .testimonial-author span { font-size: 15px; color: var(--gray); font-weight: 500; }
 .testimonial-verified {
@@ -1004,6 +1008,48 @@ p, .lead { font-family: 'Poppins', Arial, sans-serif; }
     opacity: 1;
 }
 .modal-close:hover { color: var(--red); }
+.modal-close-x {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: var(--white);
+    border: 2px solid #e0e0e0;
+    color: var(--gray);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+}
+.modal-close-x:hover {
+    background: var(--red);
+    border-color: var(--red);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+.payment-methods-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0;
+}
+.payment-methods-img {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .modal-cta-content h2 { color: var(--pink-text); font-size: 42px; font-weight: 800; }
 .modal-cta-content > p { color: var(--dark); font-size: 20px; font-weight: 500; }
 .modal-old { color: var(--gray); text-decoration: line-through; font-size: 40px; font-family: 'Fredoka', sans-serif; }
